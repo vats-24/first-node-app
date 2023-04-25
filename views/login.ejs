@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <form action="/login" method="post">
+    <button type="submit" >Login</button>
+    </form> -->
+    <main>
+        <form method="post" action="/login">   <!--by default the form submit method is get we have to change it to post action is form submit hone par kkis end point pr hit krna hai -->
+            <h1>Login Now</h1>
+            <!-- <input type="text" name="name" placeholder="Name"/> -->
+            <input type="email" name="email" placeholder="Email" value="<%=locals.email%>"/>
+            <input type="password" name="password" placeholder="Password"/>
+
+<p class="error"><%=locals.message%></p>
+
+            <button type="submit" >Login</button>
+        </form>
+    </main>
+</body>
+</html>
