@@ -3,7 +3,7 @@ import fs from "fs"
 import path from "path"
 import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
-import jwt from "jsonwebtoken" // we use coz in application window token generated in db was not matching 
+import jwt from "jsonwebtoken"  
 import bcrypt from "bcrypt"
 
 mongoose.connect("mongodb://127.0.0.1:27017",{ //here we write instead of local host time 1 49 48
